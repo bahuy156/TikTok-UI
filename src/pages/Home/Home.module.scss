@@ -1,4 +1,11 @@
 .wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-left: 16px;
     width: 692px;
+    max-width: 692px;
     min-height: 1000px;
+    padding: 24px 0px;
+    position: relative;
 }

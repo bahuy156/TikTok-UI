@@ -41,6 +41,8 @@ function Sidebar() {
 
       <SuggestAccounts label="Tài khoản được đề xuất" />
       <SuggestAccounts label="Các tài khoản đang follow" />
+      <SuggestAccounts label="Các tài khoản đang follow" />
+      <SuggestAccounts label="Các tài khoản đang follow" />
     </div>
   );
 }
