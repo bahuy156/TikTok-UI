@@ -1,0 +1,95 @@
+.search, 
+.search-result {
+    width: 361px;
+}
+
+.search {
+    position: relative;
+    height: var(--search-height);
+    display: flex;
+    padding-left: 16px;
+    margin-left: 100px;
+    background-color: rgba(22, 24, 35, .06);
+    border-radius: var(--search-border-radius);
+    border: 1.5px solid transparent;
+
+    .search-btn {
+        color: rgba(22, 24, 35, 0.34);
+    }
+
+    input {
+        flex: 1;
+        width: 252px;
+        height: 100%;
+        padding-right: 40px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: var(--font-family);
+        line-height: 22px;
+        color: var(--black);
+        caret-color: var(--primary);
+        background-color: transparent;
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: rgba(22, 24, 35, 0.75);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: var(--search-height-spacer);
+        right: var(--search-button-width);
+        width: 1px; 
+        height: calc(var(--search-height) - var(--search-height-spacer) * 2);
+        background-color: rgba(22, 24, 35, .12);;
+    }
+
+    &:focus-within {
+        border-color: rgba(22, 24, 35, .2);
+    }
+}
+
+.search-account {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+}
+
+.close,
+.loading {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(var(--search-button-width) + 16px);
+    color: rgba(22, 24, 35, 0.34);
+}
+
+.loading {
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+.search-btn {
+    width: var(--search-button-width);
+    padding: 10px 16px;
+    height: 100%;
+    border-top-right-radius: var(--search-border-radius);
+    border-bottom-right-radius: var(--search-border-radius);
+    font-size: 1.8rem;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, .03);
+    }
+}
