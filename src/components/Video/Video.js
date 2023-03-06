@@ -14,13 +14,14 @@ import { Wrapper as PopperWrapper } from "~/components/Popper";
 import Image from "~/components/Image";
 import Button from "~/components/Button";
 import MenuShare from "~/components/MenuShare";
-import video1 from "~/assets/Video/video_1.mp4";
+import video1 from "~/assets/Video/video_2.mp4";
 import styles from "./Video.module.scss";
 
 const cx = classNames.bind(styles);
 
-function Video() {
+function Video({ data }) {
   const [playing, setPlaying] = useState(true);
+
   const videoRef = useRef();
 
   const handleVideo = () => {
@@ -51,42 +52,43 @@ function Video() {
 
   return (
     <div className={cx("wrapper")}>
-      <Tippy
-        interactive
-        placement="bottom"
-        delay={[800, 400]}
-        offset={[120, 10]}
-        render={avatarPreview}
-      >
-        <Image
-          className={cx("avatar")}
-          src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/5b5b18788ca6f3d618541f8f5b3fcd51~c5_100x100.jpeg?x-expires=1677117600&x-signature=rBSxvdnF78zTyGi7ELqRWHiZqPs%3D"
-          alt="avt"
-        />
-      </Tippy>
+      <div>
+        <Tippy
+          interactive
+          placement="bottom"
+          delay={[800, 400]}
+          offset={[120, 10]}
+          render={avatarPreview}
+        >
+          <Image className={cx("avatar")} src={data.avatar} alt="avt" />
+        </Tippy>
+      </div>
 
       <div className={cx("content")}>
         <div className={cx("header")}>
-          <Tippy
-            interactive
-            delay={[800, 400]}
-            offset={[-60, 38]}
-            render={avatarPreview}
-          >
-            <div className={cx("name")}>
-              <h3 className={cx("nick-name")}>nhatwuyn.02</h3>
-              <h4 className={cx("full-name")}>Nhật Quyên</h4>
-            </div>
-          </Tippy>
+          <div>
+            <Tippy
+              interactive
+              delay={[800, 400]}
+              offset={[-60, 38]}
+              render={avatarPreview}
+            >
+              <div className={cx("name")}>
+                <h3 className={cx("nick-name")}>{data.nickName}</h3>
+                <h4 className={cx("full-name")}>{data.fullName}</h4>
+              </div>
+            </Tippy>
+          </div>
+
           <Button className={cx("follow-btn")} outline small>
             Follow
           </Button>
-          <span className={cx("title")}>@Nhatquyenne</span>
+
+          <span className={cx("title")}>{data.title}</span>
+
           <div className={cx("link-music")}>
             <FontAwesomeIcon className={cx("icon-music")} icon={faMusic} />
-            <span className={cx("name-music")}>
-              Nhạc nền - My Heart Will Go On
-            </span>
+            <span className={cx("name-music")}>{data.nameMusic}</span>
           </div>
         </div>
 
@@ -106,8 +108,9 @@ function Video() {
                   icon={faHeart}
                 />
               </p>
-              <strong className={cx("text")}>222.5k</strong>
+              <strong className={cx("text")}>{data.like}</strong>
             </div>
+
             <div className={cx("interact-child")}>
               <p className={cx("wrapper-icon")}>
                 <FontAwesomeIcon
@@ -115,8 +118,9 @@ function Video() {
                   icon={faComment}
                 />
               </p>
-              <strong className={cx("text")}>3220</strong>
+              <strong className={cx("text")}>{data.comment}</strong>
             </div>
+
             <Tippy
               interactive
               offset={[89, 5]}
@@ -130,7 +134,7 @@ function Video() {
                     icon={faShare}
                   />
                 </p>
-                <strong className={cx("text")}>1506</strong>
+                <strong className={cx("text")}>{data.share}</strong>
               </div>
             </Tippy>
           </div>

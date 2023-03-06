@@ -1,0 +1,118 @@
+{
+  "accountSuggest": [
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/29e13f3454228f6825e79ecea2314137~c5_100x100.jpeg?x-expires=1678179600&x-signature=evtfgw9mgWVvprgRB1utrd1aIgc%3D",
+      "nickName": "nhatwuyn.02",
+      "check": true,
+      "name": "Lê Thị Nhật Quyên",
+      "id": 1
+    },
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/219e56290d96b5c4dae4c7750fb94a5b~c5_100x100.jpeg?x-expires=1678179600&x-signature=MZcqoVD9r4UPNeIN18FKxocx3OI%3D",
+      "nickName": "cciinnn",
+      "check": true,
+      "name": "Bùi Thảo Ly",
+      "id": 2
+    },
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/05aa222706c452c8ad0ea7d2e719a745~c5_100x100.jpeg?x-expires=1678179600&x-signature=yRc2GmYcknxhYqURAjkOlaKRANw%3D",
+      "nickName": "hoaa.hanassii",
+      "check": true,
+      "name": "Đào Lê Phương Hoa",
+      "id": 3
+    }
+  ],
+  "accountFollow": [
+    {
+      "avatar": "https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/9656d7c2e771739bba41ac69795b9be5.jpeg?x-expires=1678262400&x-signature=YNjUhq9%2FlpZfKGCBCFzBBSYqVEA%3D",
+      "nickName": "_kimuriel27",
+      "check": "true",
+      "name": "N g o c K i m",
+      "id": 1
+    },
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/2500fcb26d932b94075f5b142747f3f2~c5_100x100.jpeg?x-expires=1678262400&x-signature=8iahYQpTEs3cpwd4%2FVXqgmExjmM%3D",
+      "nickName": "nganchennxinh",
+      "check": "true",
+      "name": "Ngân Chen🧸",
+      "id": 2
+    },
+    {
+      "avatar": "https://scontent.fsgn2-3.fna.fbcdn.net/v/t39.30808-6/285993815_1955595391306192_3725328400118609186_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=7zZMoRKUCSQAX8dh8pJ&_nc_ht=scontent.fsgn2-3.fna&oh=00_AfDeHr7jrN02UH4mYiil41v3d2-9lwz08SbcnY6q1NlfUw&oe=640B9129",
+      "nickName": "smbhuyyy__",
+      "check": "true",
+      "name": "B a H u y 1 5 6",
+      "id": 3
+    }
+  ],
+  "video": [
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/29e13f3454228f6825e79ecea2314137~c5_100x100.jpeg?x-expires=1678179600&x-signature=evtfgw9mgWVvprgRB1utrd1aIgc%3D",
+      "nickName": "nhatwuyn.02",
+      "fullName": "Nhật Quyên",
+      "title": "@Nhatquyenne",
+      "nameMusic": "Nhạc nền - My Heart Will Go On",
+      "like": "222.5K",
+      "comment": "3220",
+      "share": "1506",
+      "id": 1
+    },
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/219e56290d96b5c4dae4c7750fb94a5b~c5_100x100.jpeg?x-expires=1678179600&x-signature=MZcqoVD9r4UPNeIN18FKxocx3OI%3D",
+      "nickName": "cciinnn",
+      "fullName": "CiiN",
+      "title": "Bùi Thảo Ly (Sịn) - IG: l.ciin",
+      "nameMusic": "Nhạc nền - Made You Look",
+      "like": "2.5M",
+      "comment": "47.2K",
+      "share": "5506",
+      "id": 2
+    },
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/05aa222706c452c8ad0ea7d2e719a745~c5_100x100.jpeg?x-expires=1678179600&x-signature=yRc2GmYcknxhYqURAjkOlaKRANw%3D",
+      "nickName": "hoaa.hanassii",
+      "fullName": "Đào Lê Phương Hoa",
+      "title": "✨ 1998 ✨",
+      "nameMusic": "Nhạc nền - 𝑩 𝑰 𝑲 𝑬 𝒀 𝑹 𝑬 𝑴 𝑰 𝑿",
+      "like": "4.2M",
+      "comment": "317.8K",
+      "share": "1080",
+      "id": 3
+    }
+  ],
+  "avatarPreview": [
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/29e13f3454228f6825e79ecea2314137~c5_100x100.jpeg?x-expires=1678179600&x-signature=evtfgw9mgWVvprgRB1utrd1aIgc%3D",
+      "nickName": "nhatwuyn.02",
+      "name": "Lê Thị Nhật Quyên",
+      "followNumber": "155.2k",
+      "followText": "Follower",
+      "likeNumber": "3.9M",
+      "likeText": "Thích",
+      "desc": "Follow for more thanks",
+      "id": 1
+    },
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/219e56290d96b5c4dae4c7750fb94a5b~c5_100x100.jpeg?x-expires=1678179600&x-signature=MZcqoVD9r4UPNeIN18FKxocx3OI%3D",
+      "nickName": "cciinnn",
+      "name": "Bùi Thảo Ly (Sịn) - IG: l.ciin",
+      "followNumber": "6.5M",
+      "followText": "Follower",
+      "likeNumber": "12.5M",
+      "likeText": "Thích",
+      "desc": "Follow for more thanks",
+      "id": 2
+    },
+    {
+      "avatar": "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/05aa222706c452c8ad0ea7d2e719a745~c5_100x100.jpeg?x-expires=1678179600&x-signature=yRc2GmYcknxhYqURAjkOlaKRANw%3D",
+      "nickName": "hoaa.hanassii",
+      "name": "Đào Lê Phương Hoa",
+      "followNumber": "13.9M",
+      "followText": "Follower",
+      "likeNumber": "9M",
+      "likeText": "Thích",
+      "desc": "Follow for more thanks",
+      "id": 3
+    }
+  ]
+}

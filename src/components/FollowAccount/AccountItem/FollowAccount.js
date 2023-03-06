@@ -1,16 +1,15 @@
-import PropTypes from "prop-types";
 import classNames from "classnames/bind";
-import styles from "./SuggestAccounts.module.scss";
+import styles from "./FollowAccount.module.scss";
 import AccountItem from "./AccountItem";
 import { useEffect, useState } from "react";
 
 const cx = classNames.bind(styles);
 
-function SuggestAccounts({ label }) {
+function FollowAccount({ label }) {
   const [datas, setDatas] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/accountSuggest")
+    fetch("http://localhost:3001/accountFollow")
       .then((res) => res.json())
       .then((data) => {
         setDatas(data);
@@ -32,8 +31,4 @@ function SuggestAccounts({ label }) {
   );
 }
 
-SuggestAccounts.propTypes = {
-  label: PropTypes.string.isRequired,
-};
-
-export default SuggestAccounts;
+export default FollowAccount;
