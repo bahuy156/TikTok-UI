@@ -59,6 +59,7 @@ function Video({ data }) {
           delay={[800, 400]}
           offset={[120, 10]}
           render={avatarPreview}
+          hideOnClick={false}
         >
           <Image className={cx("avatar")} src={data.avatar} alt="avt" />
         </Tippy>
