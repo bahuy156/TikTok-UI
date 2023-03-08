@@ -101,11 +101,12 @@ function Video({ data }) {
             loop
             onClick={handleVideo}
           />
+
           <div className={cx("interact")}>
             <div className={cx("interact-child")}>
               <p className={cx("wrapper-icon")}>
                 <FontAwesomeIcon
-                  className={cx("icon-interact")}
+                  className={cx("icon-like-interact")}
                   icon={faHeart}
                 />
               </p>
