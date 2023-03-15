@@ -71,11 +71,8 @@ function Search() {
     // Using a wrapper <div> or <span> tag around the reference element solves this by creating a new parentNode context.
     <div>
       <HeadlessTippy
-        // cho phép select
         interactive
-        // cho phép ẩn / hiện
         visible={showResult && searchResult.length > 0}
-        // cho phép custom
         render={(attrs) => (
           <div className={cx("search-result")} tabIndex="-1" {...attrs}>
             <PopperWrapper>

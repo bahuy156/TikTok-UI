@@ -10,10 +10,13 @@ function Content() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/video")
+    fetch("https://bahuy156.github.io/db-json/db.json")
       .then((res) => res.json())
       .then((listVideo) => {
-        setVideos(listVideo);
+        setVideos(listVideo.video);
+      })
+      .catch((err) => {
+        console.log(err);
       });
   }, []);
 

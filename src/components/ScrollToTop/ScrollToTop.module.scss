@@ -1,0 +1,36 @@
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.btn-scroll-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    background-color: var(--primary);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
+    }
+}
+
+.btn-scroll-top-show {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.icon-scroll-top {
+    width: 16px;
+    height: 16px;  
+    color: #fff;  
+}
+
+

@@ -13,7 +13,7 @@ function AccountItem({ data }) {
   const renderPreview = (props) => (
     <div tabIndex="-1" {...props}>
       <PopperWrapper>
-        <AccountPreview />
+        <AccountPreview data={data} />
       </PopperWrapper>
     </div>
   );

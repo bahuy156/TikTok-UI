@@ -36,6 +36,13 @@
     margin-right: 4px;
 }
 
+.icon {
+    font-size: 14px;
+    margin-top: 4px;
+    margin-right: 4px;
+    color: rgb(32, 213, 236);
+}
+
 .full-name {
     font-weight: 400;
     font-size: 14px;
@@ -72,14 +79,18 @@
 }
 
 .main {
-    position: relative;
     display: flex;
 }
 
+.video {
+    width: 280px;
+    margin-right: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 .interact {
-    position: absolute;
-    top: 217px;
-    right: -70px;
+    margin-top: 237px;
 }
 
 .interact-child {
@@ -110,6 +121,10 @@
     margin-top: 4px;
 }
 
+.icon-like-interact-active{
+    color: var(--primary);
+}
+
 .text {
     color: rgba(22, 24, 35, .75);
     font-size: 14px;
@@ -117,8 +132,4 @@
     text-align: center;
 }
 
-.video {
-    width: 270px;
-    border-radius: 8px;
-    cursor: pointer;
-}
+

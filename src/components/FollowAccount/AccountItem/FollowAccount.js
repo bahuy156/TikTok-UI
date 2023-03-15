@@ -9,10 +9,10 @@ function FollowAccount({ label }) {
   const [datas, setDatas] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/accountFollow")
+    fetch("https://bahuy156.github.io/db-json/db.json")
       .then((res) => res.json())
       .then((data) => {
-        setDatas(data);
+        setDatas(data.accountFollow);
       });
   }, []);
 

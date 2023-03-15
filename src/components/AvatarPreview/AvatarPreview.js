@@ -8,39 +8,27 @@ import styles from "./AvatarPreview.module.scss";
 
 const cx = classNames.bind(styles);
 
-function AvatarPreview() {
-  // const [datas, setDatas] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("http://localhost:3001/avatarPreview")
-  //     .then((res) => res.json())
-  //     .then((info) => {
-  //       setDatas(info);
-  //     });
-  // }, []);
-
+function AvatarPreview({ data }) {
   return (
     <div className={cx("wrapper")}>
       <div className={cx("header")}>
-        <Image
-          className={cx("avatar")}
-          src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/29e13f3454228f6825e79ecea2314137~c5_100x100.jpeg?x-expires=1678179600&x-signature=evtfgw9mgWVvprgRB1utrd1aIgc%3D"
-          alt=""
-        />
+        <Image className={cx("avatar")} src={data.avatar} alt="" />
         <Button className={cx("btn-follow")} outline small>
           Follow
         </Button>
       </div>
 
       <div className={cx("body")}>
-        <span className={cx("nick-name")}>nhatwuyn.02</span>
-        <FontAwesomeIcon className={cx("check")} icon={faCheckCircle} />
-        <p className={cx("name")}>Lê Thị Nhật Quyên</p>
+        <span className={cx("nick-name")}>{data.nickName}</span>
+        {data.tick && (
+          <FontAwesomeIcon className={cx("check")} icon={faCheckCircle} />
+        )}
+        <p className={cx("name")}>{data.namePreview}</p>
 
         <p className={cx("interact")}>
-          <span className={cx("follow")}>155.2k</span>
+          <span className={cx("follow")}>{data.followPreview}</span>
           <span className={cx("title")}>Follower</span>
-          <span className={cx("follow")}>3.9M</span>
+          <span className={cx("follow")}>{data.likePreview}</span>
           <span className={cx("title")}>Thích</span>
         </p>
 

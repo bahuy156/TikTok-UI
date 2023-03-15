@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import Tippy from "@tippyjs/react/headless";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faCheckCircle,
   faComment,
   faHeart,
   faMusic,
@@ -14,13 +15,13 @@ import { Wrapper as PopperWrapper } from "~/components/Popper";
 import Image from "~/components/Image";
 import Button from "~/components/Button";
 import MenuShare from "~/components/MenuShare";
-import video1 from "~/assets/Video/video_2.mp4";
 import styles from "./Video.module.scss";
 
 const cx = classNames.bind(styles);
 
 function Video({ data }) {
   const [playing, setPlaying] = useState(true);
+  const [likeActive, setLikeActive] = useState(false);
 
   const videoRef = useRef();
 
@@ -34,10 +35,14 @@ function Video({ data }) {
     }
   };
 
+  const onLikeBtn = () => {
+    setLikeActive(!likeActive);
+  };
+
   const avatarPreview = (props) => (
     <div tabIndex="-1" {...props}>
       <PopperWrapper>
-        <AvatarPreview />
+        <AvatarPreview data={data} />
       </PopperWrapper>
     </div>
   );
@@ -71,11 +76,17 @@ function Video({ data }) {
             <Tippy
               interactive
               delay={[800, 400]}
-              offset={[-60, 38]}
+              offset={[-98, 38]}
               render={avatarPreview}
             >
               <div className={cx("name")}>
                 <h3 className={cx("nick-name")}>{data.nickName}</h3>
+                {data.tick && (
+                  <FontAwesomeIcon
+                    className={cx("icon")}
+                    icon={faCheckCircle}
+                  />
+                )}
                 <h4 className={cx("full-name")}>{data.fullName}</h4>
               </div>
             </Tippy>
@@ -97,16 +108,18 @@ function Video({ data }) {
           <video
             ref={videoRef}
             className={cx("video")}
-            src={video1}
+            src={data.videoURL}
             loop
             onClick={handleVideo}
           />
 
           <div className={cx("interact")}>
-            <div className={cx("interact-child")}>
+            <div className={cx("interact-child")} onClick={onLikeBtn}>
               <p className={cx("wrapper-icon")}>
                 <FontAwesomeIcon
-                  className={cx("icon-like-interact")}
+                  className={cx("icon-like-interact", {
+                    "icon-like-interact-active": likeActive,
+                  })}
                   icon={faHeart}
                 />
               </p>
